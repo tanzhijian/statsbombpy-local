@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "statsbombpy-local"
+version = "0.1.0"
+description = "statsbombpy uses local open-data"
+authors = ["tanzhijian <tanzhijianorg@outlook.com>"]
+readme = "README.md"
+packages = [{include = "statsbombpy_local"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+statsbombpy = "^1.11.0"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+ruff = "^0.0.286"
+mypy = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
