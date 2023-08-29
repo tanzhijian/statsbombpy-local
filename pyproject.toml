@@ -10,6 +10,7 @@ packages = [{include = "statsbombpy_local"}]
 python = "^3.10"
 statsbombpy = "^1.11.0"
 python-dotenv = "^1.0.0"
+requests-mock = "^1.11.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -20,3 +21,10 @@ mypy = "^1.5.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests",]
