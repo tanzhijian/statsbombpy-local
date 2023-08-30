@@ -1,0 +1,60 @@
+[
+  {
+    "team_id": 971,
+    "team_name": "Chelsea FCW",
+    "lineup": [
+      {
+        "player_id": 4633,
+        "player_name": "Magdalena Lilly Eriksson",
+        "player_nickname": null,
+        "jersey_number": 16,
+        "country": {
+          "id": 220,
+          "name": "Sweden"
+        },
+        "cards": [],
+        "positions": [
+          {
+            "position_id": 5,
+            "position": "Left Center Back",
+            "from": "00:00",
+            "to": null,
+            "from_period": 1,
+            "to_period": null,
+            "start_reason": "Starting XI",
+            "end_reason": "Final Whistle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "team_id": 746,
+    "team_name": "Manchester City WFC",
+    "lineup": [
+      {
+        "player_id": 4635,
+        "player_name": "Julia Spetsmark",
+        "player_nickname": null,
+        "jersey_number": 15,
+        "country": {
+          "id": 220,
+          "name": "Sweden"
+        },
+        "cards": [],
+        "positions": [
+          {
+            "position_id": 21,
+            "position": "Left Wing",
+            "from": "00:00",
+            "to": "45:00",
+            "from_period": 1,
+            "to_period": 2,
+            "start_reason": "Starting XI",
+            "end_reason": "Substitution - Off (Tactical)"
+          }
+        ]
+      }
+    ]
+  }
+]
