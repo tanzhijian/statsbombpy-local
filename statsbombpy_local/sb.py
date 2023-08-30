@@ -93,3 +93,26 @@ def events(
             include_360_metrics=include_360_metrics,
         )
     return sb_events
+
+
+def frames(
+    match_id: int,
+    fmt: str = "dataframe",
+    creds: dict = DEFAULT_CREDS,
+    local_paths: Paths = _local_paths,
+) -> DataFrame | list | dict:
+    if has_auth(creds) is True:
+        return sb.frames(match_id, fmt, creds)
+
+    with Mocker() as m:
+        data = read_data(local_paths.frames(match_id))
+        m.get(_remote_paths.frames(match_id), json=data)
+        sb_frames = sb.frames(match_id, fmt)
+    return sb_frames
+
+
+competition_events = sb.competition_events
+competition_frames = sb.competition_frames
+player_match_stats = sb.player_match_stats
+player_season_stats = sb.player_season_stats
+team_season_stats = sb.team_season_stats

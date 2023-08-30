@@ -5,7 +5,7 @@ import pytest
 from pandas import DataFrame
 from statsbombpy.api_client import NoAuthWarning
 
-from statsbombpy_local.sb import competitions, matches, lineups, events
+from statsbombpy_local.sb import competitions, matches, lineups, events, frames
 from statsbombpy_local._config import Paths
 
 
@@ -38,3 +38,9 @@ def test_events() -> None:
     e = events(7298, local_paths=Paths(path))
     if isinstance(e, DataFrame):
         assert e.loc[0].possession_team == "Manchester City WFC"
+
+
+def test_frames() -> None:
+    fm = frames(3788741, local_paths=Paths(path))
+    if isinstance(fm, DataFrame):
+        assert not fm.loc[0].keeper
