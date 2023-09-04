@@ -1,13 +1,11 @@
 [tool.poetry]
 name = "statsbombpy-local"
-version = "0.1.1"
+version = "0.1.2"
 description = "statsbombpy uses local open-data"
 authors = ["tanzhijian <tanzhijianorg@outlook.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "statsbombpy_local"}]
-
-[project.urls]
 homepage = "https://github.com/tanzhijian/statsbombpy-local"
 repository = "https://github.com/tanzhijian/statsbombpy-local"
 
