@@ -3,8 +3,11 @@ name = "statsbombpy-local"
 version = "0.1.0"
 description = "statsbombpy uses local open-data"
 authors = ["tanzhijian <tanzhijianorg@outlook.com>"]
+license = "MIT"
 readme = "README.md"
 packages = [{include = "statsbombpy_local"}]
+homepage = "https://github.com/tanzhijian/statsbombpy-local"
+repository = "https://github.com/tanzhijian/statsbombpy-local"
 
 [tool.poetry.dependencies]
 python = "^3.10"
