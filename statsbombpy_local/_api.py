@@ -111,7 +111,22 @@ def competition_events(
     )
 
 
-competition_frames = sb.competition_frames
+def competition_frames(
+    country: str,
+    division: str,
+    season: str,
+    gender: str = "male",
+    fmt: str = "dataframe",
+    creds: dict = DEFAULT_CREDS,
+    local_paths: dict = LOCAL_PATHS,
+) -> DataFrame | dict:
+    if not has_auth(creds):
+        public.get_response = get_response
+        public.OPEN_DATA_PATHS = local_paths
+        sb.frames = partial(frames, local_paths=local_paths)
+    return sb.competition_frames(country, division, season, gender, fmt, creds)
+
+
 player_match_stats = sb.player_match_stats
 player_season_stats = sb.player_season_stats
 team_season_stats = sb.team_season_stats
