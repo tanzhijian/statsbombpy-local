@@ -1,0 +1,154 @@
+[
+  {
+    "id": "5eee3ffd-f0c0-4532-868b-4a66cbf20cb8",
+    "index": 1,
+    "period": 1,
+    "timestamp": "00:00:00.000",
+    "minute": 0,
+    "second": 0,
+    "type": {
+      "id": 35,
+      "name": "Starting XI"
+    },
+    "possession": 1,
+    "possession_team": {
+      "id": 220,
+      "name": "Real Madrid"
+    },
+    "play_pattern": {
+      "id": 1,
+      "name": "Regular Play"
+    },
+    "team": {
+      "id": 220,
+      "name": "Real Madrid"
+    },
+    "duration": 0.0,
+    "tactics": {
+      "formation": 41212,
+      "lineup": [
+        {
+          "player": {
+            "id": 5597,
+            "name": "Keylor Navas Gamboa"
+          },
+          "position": {
+            "id": 1,
+            "name": "Goalkeeper"
+          },
+          "jersey_number": 1
+        },
+        {
+          "player": {
+            "id": 5721,
+            "name": "Daniel Carvajal Ramos"
+          },
+          "position": {
+            "id": 2,
+            "name": "Right Back"
+          },
+          "jersey_number": 2
+        },
+        {
+          "player": {
+            "id": 5485,
+            "name": "Raphaël Varane"
+          },
+          "position": {
+            "id": 3,
+            "name": "Right Center Back"
+          },
+          "jersey_number": 5
+        },
+        {
+          "player": {
+            "id": 5201,
+            "name": "Sergio Ramos García"
+          },
+          "position": {
+            "id": 5,
+            "name": "Left Center Back"
+          },
+          "jersey_number": 4
+        },
+        {
+          "player": {
+            "id": 5552,
+            "name": "Marcelo Vieira da Silva Júnior"
+          },
+          "position": {
+            "id": 6,
+            "name": "Left Back"
+          },
+          "jersey_number": 12
+        },
+        {
+          "player": {
+            "id": 5539,
+            "name": "Carlos Henrique Casimiro"
+          },
+          "position": {
+            "id": 10,
+            "name": "Center Defensive Midfield"
+          },
+          "jersey_number": 14
+        },
+        {
+          "player": {
+            "id": 5463,
+            "name": "Luka Modrić"
+          },
+          "position": {
+            "id": 13,
+            "name": "Right Center Midfield"
+          },
+          "jersey_number": 10
+        },
+        {
+          "player": {
+            "id": 5574,
+            "name": "Toni Kroos"
+          },
+          "position": {
+            "id": 15,
+            "name": "Left Center Midfield"
+          },
+          "jersey_number": 8
+        },
+        {
+          "player": {
+            "id": 4926,
+            "name": "Francisco Román Alarcón Suárez"
+          },
+          "position": {
+            "id": 19,
+            "name": "Center Attacking Midfield"
+          },
+          "jersey_number": 22
+        },
+        {
+          "player": {
+            "id": 19677,
+            "name": "Karim Benzema"
+          },
+          "position": {
+            "id": 22,
+            "name": "Right Center Forward"
+          },
+          "jersey_number": 9
+        },
+        {
+          "player": {
+            "id": 5207,
+            "name": "Cristiano Ronaldo dos Santos Aveiro"
+          },
+          "position": {
+            "id": 24,
+            "name": "Left Center Forward"
+          },
+          "jersey_number": 7
+        }
+      ]
+    }
+  }
+]

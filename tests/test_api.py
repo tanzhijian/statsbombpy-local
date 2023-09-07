@@ -11,6 +11,7 @@ from statsbombpy_local._api import (
     lineups,
     events,
     frames,
+    competition_events,
 )
 from statsbombpy_local._utils import generate_paths
 
@@ -51,3 +52,14 @@ def test_fframes():
     fm = frames(3788741, local_paths=LOCAL_TEST_PATHS)
     if isinstance(fm, DataFrame):
         assert not fm.loc[0].keeper
+
+
+def test_competition_events():
+    ce = competition_events(
+        country="Europe",
+        division="Champions League",
+        season="2017/2018",
+        local_paths=LOCAL_TEST_PATHS,
+    )
+    if isinstance(ce, DataFrame):
+        assert ce.loc[0].possession_team == "Real Madrid"
