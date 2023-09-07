@@ -29,9 +29,10 @@ sb.matches(competition_id=2, season_id=44)
 sb.lineups(match_id=3749068)["Arsenal"]
 sb.events(match_id=3749068)
 sb.frames(match_id=3788741)
+sb.competition_events(country="Europe", division="UEFA Euro", season="2020")
+sb.competition_frames(country="Europe", division="UEFA Euro", season="2020")
 ```
 
 ### Note
 
-* `"competitions", "matches", "lineups", "events", "frames",` these five functions use local open-data.
-* The rest uses the original functions of statsbombpy, which requires network requests.
+* `"player_match_stats", "player_season_stats", "team_season_stats",` have not been changed because they require credentials.
