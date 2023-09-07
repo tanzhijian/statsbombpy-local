@@ -13,7 +13,6 @@ repository = "https://github.com/tanzhijian/statsbombpy-local"
 python = "^3.10"
 statsbombpy = "^1.11.0"
 python-dotenv = "^1.0.0"
-requests-mock = "^1.11.0"
 
 
 [tool.poetry.group.dev.dependencies]

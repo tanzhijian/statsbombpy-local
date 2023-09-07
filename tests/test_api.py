@@ -12,7 +12,7 @@ from statsbombpy_local._api import (
     events,
     frames,
 )
-from statsbombpy_local._config import Paths
+from statsbombpy_local._utils import generate_paths
 
 
 @pytest.fixture(autouse=True)
@@ -20,33 +20,34 @@ def ignore_no_auth_warning():
     warnings.filterwarnings("ignore", category=NoAuthWarning)
 
 
-path = Path(Path.cwd(), "tests/data")
+base_test_path = str(Path(Path.cwd(), "tests/data/")) + "/"
+LOCAL_TEST_PATHS = generate_paths(base_test_path)
 
 
-def test_competitions() -> None:
-    c = competitions(local_paths=Paths(path))
+def test_competitions():
+    c = competitions(local_paths=LOCAL_TEST_PATHS)
     if isinstance(c, DataFrame):
         assert c.loc[0].competition_id == 9
 
 
-def test_matches() -> None:
-    m = matches(2, 44, local_paths=Paths(path))
+def test_matches():
+    m = matches(2, 44, local_paths=LOCAL_TEST_PATHS)
     if isinstance(m, DataFrame):
         assert m.loc[0].away_team == "Arsenal"
 
 
-def test_lineups() -> None:
-    lu = lineups(7298, local_paths=Paths(path))
+def test_lineups():
+    lu = lineups(7298, local_paths=LOCAL_TEST_PATHS)
     assert lu["Chelsea FCW"].loc[0].jersey_number == 16
 
 
-def test_events() -> None:
-    e = events(7298, local_paths=Paths(path))
+def test_events():
+    e = events(7298, local_paths=LOCAL_TEST_PATHS)
     if isinstance(e, DataFrame):
         assert e.loc[0].possession_team == "Manchester City WFC"
 
 
-def test_fframes() -> None:
-    fm = frames(3788741, local_paths=Paths(path))
+def test_fframes():
+    fm = frames(3788741, local_paths=LOCAL_TEST_PATHS)
     if isinstance(fm, DataFrame):
         assert not fm.loc[0].keeper
