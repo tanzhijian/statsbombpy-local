@@ -11,7 +11,7 @@ def test_read_env():
 
 def test_read_data():
     data = read_data("tests/data/competitions.json")
-    assert data[0]["competition_id"] == 9
+    assert data[0]["competition_id"] == 55
 
 
 def test_generate_paths():

@@ -1,6 +1,6 @@
 [
   {
-    "id": "5eee3ffd-f0c0-4532-868b-4a66cbf20cb8",
+    "id": "2e4b1b7f-e67e-4bef-8cf1-2eab2ab81af2",
     "index": 1,
     "period": 1,
     "timestamp": "00:00:00.000",
@@ -12,25 +12,25 @@
     },
     "possession": 1,
     "possession_team": {
-      "id": 220,
-      "name": "Real Madrid"
+      "id": 773,
+      "name": "Switzerland"
     },
     "play_pattern": {
       "id": 1,
       "name": "Regular Play"
     },
     "team": {
-      "id": 220,
-      "name": "Real Madrid"
+      "id": 773,
+      "name": "Switzerland"
     },
     "duration": 0.0,
     "tactics": {
-      "formation": 41212,
+      "formation": 4231,
       "lineup": [
         {
           "player": {
-            "id": 5597,
-            "name": "Keylor Navas Gamboa"
+            "id": 5550,
+            "name": "Yann Sommer"
           },
           "position": {
             "id": 1,
@@ -40,74 +40,63 @@
         },
         {
           "player": {
-            "id": 5721,
-            "name": "Daniel Carvajal Ramos"
+            "id": 7796,
+            "name": "Silvan Widmer"
           },
           "position": {
             "id": 2,
             "name": "Right Back"
           },
-          "jersey_number": 2
+          "jersey_number": 3
         },
         {
           "player": {
-            "id": 5485,
-            "name": "Raphaël Varane"
+            "id": 8814,
+            "name": "Nico Elvedi"
           },
           "position": {
             "id": 3,
             "name": "Right Center Back"
           },
-          "jersey_number": 5
+          "jersey_number": 4
         },
         {
           "player": {
-            "id": 5201,
-            "name": "Sergio Ramos García"
+            "id": 5549,
+            "name": "Manuel Obafemi Akanji"
           },
           "position": {
             "id": 5,
             "name": "Left Center Back"
           },
-          "jersey_number": 4
+          "jersey_number": 5
         },
         {
           "player": {
-            "id": 5552,
-            "name": "Marcelo Vieira da Silva Júnior"
+            "id": 5544,
+            "name": "Ricardo Iván Rodríguez Araya"
           },
           "position": {
             "id": 6,
             "name": "Left Back"
           },
-          "jersey_number": 12
+          "jersey_number": 13
         },
         {
           "player": {
-            "id": 5539,
-            "name": "Carlos Henrique Casimiro"
-          },
-          "position": {
-            "id": 10,
-            "name": "Center Defensive Midfield"
-          },
-          "jersey_number": 14
-        },
-        {
-          "player": {
-            "id": 5463,
-            "name": "Luka Modrić"
+            "id": 5538,
+            "name": "Denis Lemi Zakaria Lako Lado"
           },
           "position": {
             "id": 13,
             "name": "Right Center Midfield"
           },
-          "jersey_number": 10
+          "jersey_number": 6
         },
         {
           "player": {
-            "id": 5574,
-            "name": "Toni Kroos"
+            "id": 6983,
+            "name": "Remo Freuler"
           },
           "position": {
             "id": 15,
@@ -117,36 +106,47 @@
         },
         {
           "player": {
-            "id": 4926,
-            "name": "Francisco Román Alarcón Suárez"
+            "id": 5545,
+            "name": "Breel-Donald Embolo"
+          },
+          "position": {
+            "id": 17,
+            "name": "Right Wing"
+          },
+          "jersey_number": 7
+        },
+        {
+          "player": {
+            "id": 3533,
+            "name": "Xherdan Shaqiri"
           },
           "position": {
             "id": 19,
             "name": "Center Attacking Midfield"
           },
-          "jersey_number": 22
+          "jersey_number": 23
         },
         {
           "player": {
-            "id": 19677,
-            "name": "Karim Benzema"
+            "id": 5548,
+            "name": "Steven Zuber"
           },
           "position": {
-            "id": 22,
-            "name": "Right Center Forward"
+            "id": 21,
+            "name": "Left Wing"
+          },
+          "jersey_number": 14
+        },
+        {
+          "player": {
+            "id": 5543,
+            "name": "Haris Seferović"
+          },
+          "position": {
+            "id": 23,
+            "name": "Center Forward"
           },
           "jersey_number": 9
-        },
-        {
-          "player": {
-            "id": 5207,
-            "name": "Cristiano Ronaldo dos Santos Aveiro"
-          },
-          "position": {
-            "id": 24,
-            "name": "Left Center Forward"
-          },
-          "jersey_number": 7
         }
       ]
     }

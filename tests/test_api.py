@@ -29,13 +29,13 @@ LOCAL_TEST_PATHS = generate_paths(base_test_path)
 def test_competitions():
     c = competitions(local_paths=LOCAL_TEST_PATHS)
     if isinstance(c, DataFrame):
-        assert c.loc[0].competition_id == 9
+        assert c.loc[0].competition_id == 55
 
 
 def test_matches():
-    m = matches(2, 44, local_paths=LOCAL_TEST_PATHS)
+    m = matches(55, 43, local_paths=LOCAL_TEST_PATHS)
     if isinstance(m, DataFrame):
-        assert m.loc[0].away_team == "Arsenal"
+        assert m.loc[0].away_team == "Spain"
 
 
 def test_lineups():
@@ -44,13 +44,13 @@ def test_lineups():
 
 
 def test_events():
-    e = events(7298, local_paths=LOCAL_TEST_PATHS)
+    e = events(3795108, local_paths=LOCAL_TEST_PATHS)
     if isinstance(e, DataFrame):
-        assert e.loc[0].possession_team == "Manchester City WFC"
+        assert e.loc[0].possession_team == "Switzerland"
 
 
 def test_fframes():
-    fm = frames(3788741, local_paths=LOCAL_TEST_PATHS)
+    fm = frames(3795108, local_paths=LOCAL_TEST_PATHS)
     if isinstance(fm, DataFrame):
         assert not fm.loc[0].keeper
 
@@ -58,12 +58,12 @@ def test_fframes():
 def test_competition_events():
     ce = competition_events(
         country="Europe",
-        division="Champions League",
-        season="2017/2018",
+        division="UEFA Euro",
+        season="2020",
         local_paths=LOCAL_TEST_PATHS,
     )
     if isinstance(ce, DataFrame):
-        assert ce.loc[0].possession_team == "Real Madrid"
+        assert ce.loc[0].possession_team == "Switzerland"
 
 
 def test_competition_frames():
