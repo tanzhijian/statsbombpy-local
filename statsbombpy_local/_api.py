@@ -98,6 +98,8 @@ def competition_events(
     if not has_auth(creds):
         public.get_response = get_response
         public.OPEN_DATA_PATHS = local_paths
+        # 暂时这样通过判断平台避免非 macOS 递归错误
+        # 暂时不明白原因
         if sys.platform == "darwin":
             sb.events = partial(events, local_paths=local_paths)
     return sb.competition_events(
