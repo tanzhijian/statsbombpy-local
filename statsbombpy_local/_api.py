@@ -1,3 +1,4 @@
+import sys
 from functools import partial
 
 from statsbombpy import sb, public
@@ -97,7 +98,8 @@ def competition_events(
     if not has_auth(creds):
         public.get_response = get_response
         public.OPEN_DATA_PATHS = local_paths
-        sb.events = partial(events, local_paths=local_paths)
+        if sys.platform == "darwin":
+            sb.events = partial(events, local_paths=local_paths)
     return sb.competition_events(
         country,
         division,
@@ -123,7 +125,8 @@ def competition_frames(
     if not has_auth(creds):
         public.get_response = get_response
         public.OPEN_DATA_PATHS = local_paths
-        sb.frames = partial(frames, local_paths=local_paths)
+        if sys.platform == "darwin":
+            sb.frames = partial(frames, local_paths=local_paths)
     return sb.competition_frames(country, division, season, gender, fmt, creds)
 
 
