@@ -1,10 +1,10 @@
 import sys
 from functools import partial
 
-from statsbombpy import sb, public
+from pandas import DataFrame
+from statsbombpy import public, sb
 from statsbombpy.api_client import has_auth
 from statsbombpy.config import DEFAULT_CREDS
-from pandas import DataFrame
 
 from ._config import LOCAL_PATHS
 from ._public import get_response

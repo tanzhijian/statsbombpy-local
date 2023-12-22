@@ -1,4 +1,5 @@
 from statsbombpy_local._public import get_response
+
 from .test_api import LOCAL_TEST_PATHS
 
 

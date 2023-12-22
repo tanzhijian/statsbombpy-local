@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 
-from ._utils import read_env, generate_paths
-
+from ._utils import generate_paths, read_env
 
 load_dotenv()
 

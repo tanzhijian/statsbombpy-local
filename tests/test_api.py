@@ -6,13 +6,13 @@ from pandas import DataFrame
 from statsbombpy.api_client import NoAuthWarning
 
 from statsbombpy_local._api import (
-    competitions,
-    matches,
-    lineups,
-    events,
-    frames,
     competition_events,
     competition_frames,
+    competitions,
+    events,
+    frames,
+    lineups,
+    matches,
 )
 from statsbombpy_local._utils import generate_paths
 

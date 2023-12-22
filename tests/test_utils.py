@@ -1,7 +1,7 @@
 import pytest
 
-from statsbombpy_local._utils import read_env, read_data, generate_paths
 from statsbombpy_local._config import base_path
+from statsbombpy_local._utils import generate_paths, read_data, read_env
 
 
 def test_read_env():

@@ -31,7 +31,7 @@ jobs:
         echo "OPEN_DATA_REPO_PATH=foobar" >> .env
     - name: Lint with Ruff
       run: |
-        poetry run ruff --format=github --target-version=py310 .
+        poetry run ruff .
     - name: Type Check with Mypy
       run: |
         poetry run mypy .

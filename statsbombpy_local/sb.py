@@ -1,16 +1,15 @@
 from ._api import (
-    competitions,
-    matches,
-    lineups,
-    events,
-    frames,
     competition_events,
     competition_frames,
+    competitions,
+    events,
+    frames,
+    lineups,
+    matches,
     player_match_stats,
     player_season_stats,
     team_season_stats,
 )
-
 
 __all__ = (
     "competitions",
