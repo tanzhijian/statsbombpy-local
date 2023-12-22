@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "statsbombpy-local"
-version = "0.2.0"
+version = "0.2.1"
 description = "statsbombpy uses local open-data"
 authors = ["tanzhijian <tanzhijianorg@outlook.com>"]
 license = "MIT"
