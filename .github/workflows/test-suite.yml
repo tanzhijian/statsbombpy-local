@@ -1,4 +1,4 @@
-name: Lint, Type Check and Test
+name: Test Suite
 
 on:
   push:
